@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.quiz-home-page{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catagory, .java, .html, .css, .javaScript, .oracle{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catagory{
+    padding: 50px 50px;
+}
+h1,p,h2{
+    padding: 5px;
+    text-align: center;
+}
+.start-quiz{
+    text-align: center;
+    padding: 10px;
+}
+.quiz-btn{
+    padding: 7px;
+    width: 100px;
+    border-radius: 10px;
+}
+.select-catagory{
+    border-radius:10px;
+    animation: fadeInUp 1s ease-out;
+}
+.pre-nxt{
+    display: flex;
+    gap: 20px;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ques-option{
+    background-color: blueviolet;
+    padding: 25px;
+}
+.Java{
+    padding: 50px;
+}
+h2{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 30px;
+    animation: fadeIn 1s ease-in;
+}
+.catagory-btn{
+    background-color: rgba(0, 0, 255, 0.204);
+    display: block;
+    border-radius: 10px;
+    margin-left: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    opacity: 0;
+    animation: slideIn 0.6s ease forwards, bgPulse 2s infinite ease-in-out;
+}
+
+.Quiz-in-Java, #timer, #opt1, #opt2, #opt3, #opt4{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#opt1, #opt2, #opt3, #opt4{
+    width: 45%;
+    margin-bottom: 25px;
+}
+#options{
+    padding: 50px;
+}
+.split-options{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    min-width: 50wh;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nextBtn, #question{
+   padding: 10px;
+   width: 100px;
+}
+.catagory-btn:nth-child(2) { animation-delay: 0.2s, 0s; }
+.catagory-btn:nth-child(3) { animation-delay: 0.4s, 0s; }
+.catagory-btn:nth-child(4) { animation-delay: 0.6s, 0s; }
+.catagory-btn:nth-child(5) { animation-delay: 0.8s, 0s; }
+.catagory-btn:nth-child(6) { animation-delay: 1s, 0s; }
+
+.catagory-btn:hover,.quiz-btn:hover{
+    cursor:pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bgPulse {
+    0% { background-color: rgba(0, 0, 255, 0.168); }
+    50% { background-color: rgba(0, 0, 255, 0.161); }
+    100% { background-color: rgba(0, 0, 255, 0.171); }
+}

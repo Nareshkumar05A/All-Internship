@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="quiz-home-page">
+    <div class="sub-quiz">
+      <h1>Quiz App</h1>
+      <p>
+        A fun, interactive quiz app to test your knowledge. Built with <br />
+        HTML, CSS(SCSS), and JavaScript, featuring multiple-questions,<br />
+        scoring, and a clean user-friendly design.
+      </p>
+      <div class="start-quiz">
+        <button class="quiz-btn" id="startQuizBtn" onclick="start()">Start Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <article class="catagory" id="categorySection">
+      <div class="select-catagory">
+        <h2>Choose Any Category</h2>
+        <button class="catagory-btn" id="java" onclick="JAVA()">JAVA</button>
+        <button class="catagory-btn" id="html" onclick="HTML()">HTML</button>
+        <button class="catagory-btn" id="css" onclick="CSS()">CSS</button>
+        <button class="catagory-btn" id="javascript" onclick="JAVASCRIPT()">JAVASCRIPT</button>
+        <button class="catagory-btn" id="oracle" onclick="ORACLE()">ORACLE</button>
+      </div>
+    </article>
+  </main>
+
+  <main>
+  <article>
+    <div id="javaQuiz">
+      <h3 class="Quiz-in-Java">Quiz in Java</h3>
+      <div id="timer" style="font-weight: bold; margin-bottom: 10px;">Time left: 60s</div>
+      <div class="Java">
+        
+         <div class="ques-option">
+           <div class="question" id="question">Question content...</div>
+          <div id="options">
+            <div class="split-options">
+              <div id="opt1">
+              <label><input type="radio" name="q1" value="yes"> Yes</label>
+            </div>
+            <div id="opt2">
+              <label><input type="radio" name="q1" value="no"> No</label>
+            </div>
+            </div>
+            <div class="split-options">
+              <div id="opt3">
+              <label><input type="radio" name="q1" value="maybe"> Maybe</label>
+            </div>
+            <div id="opt4">
+              <label><input type="radio" name="q1" value="notmaybe"> Not maybe</label>
+            </div>
+            </div>
+          </div>
+         </div>
+          <div class="btns">
+            <button id="Change-Catagory">ChangeCatagory</button>
+          <div class="pre-nxt">
+            <button id=pre-btn>previous</button>
+          <button id="next-btn">Next</button>
+          </div>
+          </div>
+      </div>
+      <div class="button">
+        <button id="nextBtn" onclick="nextQuestion()">Start</button>
+      </div>
+    </div>
+  </article>
+</main>
+
+
+  <main>
+    <article>
+      <div class="html" id="htmlQuiz">
+        <h3>Quiz in HTML</h3>
+        <div class="question">Question content for HTML here...</div>
+        <button onclick="ChangeCatagory()">Catagory Change</button>
+      </div>
+    </article>
+  </main>
+
+  <main>
+    <article>
+      <div class="css" id="cssQuiz">
+        <h3>Quiz in CSS</h3>
+        <div class="question">Question content for CSS here...</div>
+        <button onclick="ChangeCatagory()">Catagory Change</button>
+      </div>
+    </article>
+  </main>
+
+  <main>
+    <article>
+      <div class="javaScript" id="jsQuiz">
+        <h3>Quiz in JavaScript</h3>
+        <div class="question">Question content for JavaScript here...</div>
+        <button id="startQuiz">Start</button>
+        <button onclick="ChangeCatagory()">Catagory Change</button>
+      </div>
+    </article>
+  </main>
+
+  <main>
+    <article>
+      <div class="oracle" id="oracleQuiz">
+        <h3>Quiz in Oracle</h3>
+        <div class="question">Question content for Oracle here...</div>
+        <button onclick="ChangeCatagory()">Catagory Change</button>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
